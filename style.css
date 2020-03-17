@@ -1,0 +1,124 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.todo-container {
+  min-height: 200px;
+  max-height: 600px;
+  width: 400px;
+  overflow: hidden;
+}
+.header-container {
+  padding: 5px 20px;
+  background: #fdfdff;
+  border-bottom: 1px solid #edf1f8;
+}
+.space-between {
+  justify-content: space-between;
+  display: flex;
+}
+.head {
+  font-size: 17px;
+  color: #666afb;
+  margin-bottom: 0px;
+}
+.head span {
+  font-size: 16px;
+  font-weight: 100;
+}
+.task {
+  color: #a4a5ba;
+  font-size: 15px;
+}
+.subtitle {
+  color: #a4a5ba;
+  font-size: 14px;
+  margin-top: 0;
+}
+.todo-list-container {
+  position: relative;
+}
+.circle {
+  font-size: 26px;
+  color: #2196f3;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.input-wrapper {
+  padding: 5px 15px;
+  display: none;
+}
+.input-wrapper .todo-input {
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  border-radius: 2px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #dadada;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.todo-list {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin: 0;
+  border-bottom: 1px solid #f9f9f9;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.todo-list:hover {
+  background: #f1f1f1;
+}
+
+.task-title {
+  font-size: 16px;
+  flex: 1;
+  padding: 10px 15px;
+  margin: 0;
+}
+.checkbox {
+  margin: 16px 20px 0 0;
+  height: 20px;
+  width: 20px;
+}
+.remove {
+  color: #9797ac;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 13px;
+}
+.select {
+  background-color: #ffe5e5;
+  color: #908f8f;
+}
+.active {
+  color: #908f8f;
+  background-color: #ffe5e5;
+  text-decoration: line-through;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
