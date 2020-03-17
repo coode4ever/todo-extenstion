@@ -90,7 +90,7 @@ function getTotal() {
     const tasksLength = todos.length;
     const remainingTasks = todos.filter(todo => todo.status == 0);
     chrome.browserAction.setBadgeText({
-      text: `${remainingTasks.length}+` || 0
+      text: `${remainingTasks.length}` || 0
     });
     const text = tasksLength > 0 ? "Tasks" : "Task";
     $(".task").html(tasksLength + " " + text);
@@ -103,7 +103,7 @@ function loadTodo() {
     const tasksLength = todos.length;
     const remainingTasks = todos.filter(todo => todo.status == 0);
     chrome.browserAction.setBadgeText({
-      text: `${remainingTasks.length}+` || 0
+      text: `${remainingTasks.length}` || 0
     });
     const text = tasksLength > 0 ? "Tasks" : "Task";
     $(".task").html(tasksLength + " " + text);
